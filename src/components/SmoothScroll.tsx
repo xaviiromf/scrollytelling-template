@@ -1,33 +1,38 @@
-import React, { useEffect } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import Lenis from 'lenis';
+import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const SmoothScroll: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export function SmoothScroll({ children }: { children: ReactNode }) {
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      smoothWheel: true,
+    const mm = gsap.matchMedia();
+    mm.add('(prefers-reduced-motion: no-preference) and (pointer: fine)', () => {
+      const lenis = new Lenis({ duration: 1.05, smoothWheel: true, anchors: true });
+      const update = (time: number) => lenis.raf(time * 1000);
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(update);
+      return () => {
+        gsap.ticker.remove(update);
+        lenis.off('scroll', ScrollTrigger.update);
+        lenis.destroy();
+      };
     });
-
-    lenis.on('scroll', ScrollTrigger.update);
-
-    const updateLenis = (time: number) => {
-      lenis.raf(time * 1000);
-    };
-
-    gsap.ticker.add(updateLenis);
-    gsap.ticker.lagSmoothing(0);
-
+    let disposed = false;
+    const refresh = () => { if (!disposed) ScrollTrigger.refresh(); };
+    void document.fonts.ready.then(refresh);
+    // Capture image loads: dimensions remain reserved, positions are remeasured.
+    window.addEventListener('load', refresh);
+    document.addEventListener('load', refresh, true);
+    refresh();
     return () => {
-      lenis.destroy();
-      gsap.ticker.remove(updateLenis);
+      disposed = true;
+      window.removeEventListener('load', refresh);
+      document.removeEventListener('load', refresh, true);
+      mm.revert();
     };
   }, []);
-
   return <>{children}</>;
-};
+}
