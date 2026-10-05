@@ -1,0 +1,20 @@
+{
+  "results": [
+    "8 encabezados exactos; índice, foco, anclas, estado activo y fuentes",
+    "Escucha sin autoplay; cambio de disco; cierre elimina iframe y devuelve foco",
+    "Reduced-motion dinámico: Lenis destruido, sin paralaje, contenido visible",
+    "Viewport 360: sin overflow, todas las imágenes cargadas y contenido visible",
+    "Viewport 390: sin overflow, todas las imágenes cargadas y contenido visible",
+    "Viewport 768: sin overflow, todas las imágenes cargadas y contenido visible",
+    "Viewport 1440: sin overflow, todas las imágenes cargadas y contenido visible",
+    "Móvil táctil: scroll nativo, índice y anclas funcionan",
+    "Imágenes no disponibles: respaldo visible y relato íntegro"
+  ],
+  "errors": [],
+  "failedRequests": [
+    {
+      "note": "External iframe request aborted during edition change or close. No application resource failed."
+    }
+  ],
+  "axe": []
+}

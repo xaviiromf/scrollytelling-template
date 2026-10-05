@@ -1,0 +1,106 @@
+[
+  {
+    "id": "live",
+    "originalUrl": "https://substack-post-media.s3.amazonaws.com/public/images/59f4bc35-1d00-4831-999a-5d65d90f5a17_4750x3167.jpeg",
+    "originalWidth": 4750,
+    "originalHeight": 3167,
+    "files": [
+      "live-2400.webp",
+      "live-960.webp"
+    ]
+  },
+  {
+    "id": "band",
+    "originalUrl": "https://substack-post-media.s3.amazonaws.com/public/images/f31380fa-ce84-47ec-a4b5-4ae4e72a53c8_5923x3949.jpeg",
+    "originalWidth": 5923,
+    "originalHeight": 3949,
+    "files": [
+      "band-2400.webp",
+      "band-960.webp"
+    ]
+  },
+  {
+    "id": "a",
+    "originalUrl": "https://f4.bcbits.com/img/a0424227316_0.jpg",
+    "originalWidth": 3000,
+    "originalHeight": 3000,
+    "files": [
+      "a-2400.webp",
+      "a-960.webp"
+    ]
+  },
+  {
+    "id": "original",
+    "originalUrl": "https://f4.bcbits.com/img/a0203426669_0.jpg",
+    "originalWidth": 3000,
+    "originalHeight": 3000,
+    "files": [
+      "original-2400.webp",
+      "original-960.webp"
+    ]
+  },
+  {
+    "id": "rebuilt",
+    "originalUrl": "https://f4.bcbits.com/img/a1243948115_0.jpg",
+    "originalWidth": 3000,
+    "originalHeight": 3000,
+    "files": [
+      "rebuilt-2400.webp",
+      "rebuilt-960.webp"
+    ]
+  },
+  {
+    "id": "patio",
+    "originalUrl": "https://f4.bcbits.com/img/a4124594411_0.jpg",
+    "originalWidth": 2000,
+    "originalHeight": 2000,
+    "files": [
+      "patio-2400.webp",
+      "patio-960.webp"
+    ]
+  },
+  {
+    "id": "cantata",
+    "originalUrl": "https://f4.bcbits.com/img/a2859856508_0.jpg",
+    "originalWidth": 3000,
+    "originalHeight": 3000,
+    "files": [
+      "cantata-2400.webp",
+      "cantata-960.webp"
+    ]
+  },
+  {
+    "id": "b",
+    "originalUrl": "https://f4.bcbits.com/img/a0409686699_0.jpg",
+    "originalWidth": 3000,
+    "originalHeight": 3000,
+    "files": [
+      "b-2400.webp",
+      "b-960.webp"
+    ]
+  },
+  {
+    "id": "basural",
+    "originalUrl": "https://www.youtube.com/watch?v=IYuS6CxEHEY&t=30s",
+    "sourceUrl": "https://www.youtube.com/watch?v=IYuS6CxEHEY",
+    "originalWidth": 1920,
+    "originalHeight": 1080,
+    "files": [
+      "basural-1920.webp",
+      "basural-960.webp"
+    ],
+    "capture": "Still from official 1080p video at 30 seconds; no upscaling"
+  },
+  {
+    "id": "no-quiero",
+    "originalUrl": "https://www.youtube.com/watch?v=nBCHfG0PIAE&t=30s",
+    "sourceUrl": "https://www.youtube.com/watch?v=nBCHfG0PIAE",
+    "originalWidth": 1920,
+    "originalHeight": 1080,
+    "files": [
+      "no-quiero-1920.webp",
+      "no-quiero-960.webp"
+    ],
+    "capture": "Still from official 1080p video at 30 seconds; no upscaling"
+  }
+]
